@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CounterComponent } from './counter/counter/counter.component';
+import { CouterButtonsComponent } from './couter/couter-buttons/couter-buttons.component';
+import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
+import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CounterComponent,
+    CouterButtonsComponent,
+    CounterButtonsComponent,
+    CounterOutputComponent
   ],
   imports: [
     BrowserModule,
