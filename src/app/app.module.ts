@@ -7,6 +7,8 @@ import { CounterComponent } from './counter/counter/counter.component';
 import { CouterButtonsComponent } from './couter/couter-buttons/couter-buttons.component';
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './counter/store/counter.reducer';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { CounterOutputComponent } from './counter/counter-output/counter-output.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({counter: counterReducer}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]
